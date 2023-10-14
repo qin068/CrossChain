@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  #mysql数据库相关配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/block_manage?useUnicode=true&amp&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 199972068cjy
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis依赖
+mybatis:
+  type-aliases-package: com.example.testdemo.pojo
