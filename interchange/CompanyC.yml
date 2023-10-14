@@ -1,0 +1,25 @@
+# earth.yml
+accounts:
+  - name: alice
+    coins: ["1000token", "1000000000stake", "1000Ccx"]
+  - name: bob
+    coins: ["5000token", "1000Ccx", "100000000stake"]
+validator:
+  name: alice
+  staked: "100000000stake"
+faucet:
+  host: ":4502"
+  name: bob
+  coins: ["5token", "100000stake"]
+host:
+  rpc: ":26661"
+  p2p: ":26660"
+  prof: ":6062"
+  grpc: ":9092"
+  api: ":1319"
+  frontend: ":8082"
+  dev-ui: ":12347"
+genesis:
+  chain_id: "CompanyC"
+init:
+  home: "$HOME/.CompanyC"

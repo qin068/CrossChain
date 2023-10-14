@@ -1,0 +1,17 @@
+// proto/ibcdex/order.proto
+syntax = "proto3";
+package user.interchange.ibcdex;
+
+option go_package = "github.com/user/interchange/x/ibcdex/types";
+
+message OrderBook {
+  int32 idCount = 1;
+  repeated Order orders = 2;
+}
+
+message Order {
+  int32 id = 1;
+  string creator = 2;
+  int32 amount = 3;
+  int32 price = 4;
+}

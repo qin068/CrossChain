@@ -1,0 +1,14 @@
+syntax = "proto3";
+package user.interchange.blog;
+
+option go_package = "github.com/user/interchange/x/blog/types";
+
+import "gogoproto/gogo.proto";
+
+message TimedoutPost {
+  string creator = 1;
+  uint64 id = 2;
+  string title = 3; 
+  string chain = 4; 
+  string sender = 5; 
+}
